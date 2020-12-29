@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: com.yourcompany.SampleSauceTest
+-------------------------------------------------------------------------------
+Tests run: 50, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 51.949 sec <<< FAILURE! - in com.yourcompany.SampleSauceTest
+problemLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 13.665 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'itako8394.prod.miso', ip: 'fe80:0:0:0:189b:48d1:2321:169f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
+Driver info: driver.version: unknown
+Command duration or timeout: 0 milliseconds
+	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:189)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'itako8394.prod.miso', ip: 'fe80:0:0:0:189b:48d1:2321:169f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+
+validLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 16.183 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'itako5707.prod.miso', ip: 'fe80:0:0:0:1494:18be:53de:6a25%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
+Driver info: driver.version: unknown
+Command duration or timeout: 0 milliseconds
+	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:181)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'itako5707.prod.miso', ip: 'fe80:0:0:0:1494:18be:53de:6a25%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+
+lockedOutLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 29.353 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container > div > form > h3 (tried for 15 second(s) with 500 milliseconds interval)
+	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
+	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:197)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.cssSelector: #login_button_container > div > form > h3
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
+	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:197)
+
+invalidLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 30.738 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container > div > form > h3 (tried for 15 second(s) with 500 milliseconds interval)
+	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
+	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:165)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.cssSelector: #login_button_container > div > form > h3
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
+	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:165)
+
