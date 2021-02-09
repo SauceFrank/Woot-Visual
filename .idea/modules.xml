@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java-testng-selenium-general-demo.iml" filepath="$PROJECT_DIR$/java-testng-selenium-general-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aura-Java-Demo.iml" filepath="$PROJECT_DIR$/Aura-Java-Demo.iml" />
     </modules>
   </component>
 </project>

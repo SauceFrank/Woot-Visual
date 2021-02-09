@@ -1,8 +1,10 @@
-# Java-TestNG-Demo
+# Aura Java Demo
 
-45 Concurrent Sessions
-5 Real Device Sessions
+54 Concurrent Sessions
+12 Real Device Sessions
 
-Cross Browser and Android Real Devices
+Runs test on Aura Jets Site.
+
+Cross Browser, Android, and iOS Real Devices
 
 Run all tests with: mvn test

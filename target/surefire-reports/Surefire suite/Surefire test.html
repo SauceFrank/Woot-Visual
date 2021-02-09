@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>46/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>59/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 29 15:01:12 EST 2020</td>
+<td>Started on:</td><td>Tue Feb 09 11:55:36 EST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>51 seconds (51661 ms)</td>
+<tr><td>Total time:</td><td>133 seconds (133975 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,139 +75,154 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3 (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:165)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 17 more
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271794851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace271794851'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3 (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:165)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 17 more
-</pre></div></td>
-<td>30</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3 (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:197)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 17 more
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace280124197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace280124197'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3 (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:197)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: #login_button_container &gt; div &gt; form &gt; h3
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 17 more
-</pre></div></td>
-<td>29</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako8394.prod.miso&apos;, ip: &apos;fe80:0:0:0:189b:48d1:2321:169f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 37)
+  (Session info: chrome=88.0.4324.152)
+  (Driver info: chromedriver=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}),platform=Linux 4.15.0-123-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15012, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26120, 26130]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15012, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26120, 26130]], deviceName: Samsung_Galaxy_A50_real, name: AuraPageAircraft, platformName: Android, suppressKillServer: true, systemPort: 8212, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageAircraft, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: b2536250-52ed-4007-b1ca-b64..., deviceManufacturer: samsung, deviceModel: SM-A505F, deviceName: 10.101.72.14:16004, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 10.101.72.14:16004, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAircraft, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 83, suppressKillServer: true, systemPort: 8212, takesScreenshot: true, testobject_device: Samsung_Galaxy_A50_real, testobject_device_name: Samsung Galaxy A50, testobject_device_session_id: 5eaf302f-3493-432e-a47f-e57..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAircraft, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 380, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 5f17d803-f672-476e-9022-8b906a09d533
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageAircraft(SampleSauceTest.java:135)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620199415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620199415'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 37)
+  (Session info: chrome=88.0.4324.152)
+  (Driver info: chromedriver=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}),platform=Linux 4.15.0-123-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15012, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26120, 26130]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15012, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26120, 26130]], deviceName: Samsung_Galaxy_A50_real, name: AuraPageAircraft, platformName: Android, suppressKillServer: true, systemPort: 8212, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageAircraft, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: b2536250-52ed-4007-b1ca-b64..., deviceManufacturer: samsung, deviceModel: SM-A505F, deviceName: 10.101.72.14:16004, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 10.101.72.14:16004, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAircraft, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 83, suppressKillServer: true, systemPort: 8212, takesScreenshot: true, testobject_device: Samsung_Galaxy_A50_real, testobject_device_name: Samsung Galaxy A50, testobject_device_session_id: 5eaf302f-3493-432e-a47f-e57..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAircraft, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 380, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 5f17d803-f672-476e-9022-8b906a09d533
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageAircraft(SampleSauceTest.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>100</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 76)
+  (Session info: chrome=88.0.4324.93)
+  (Driver info: chromedriver=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15026, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26260, 26270]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15026, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26260, 26270]], deviceName: Samsung_Galaxy_A51_POC149, name: AuraPageAirports, platformName: Android, suppressKillServer: true, systemPort: 8226, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageAirports, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: c7c8234a-01b9-449d-9b83-177..., deviceManufacturer: samsung, deviceModel: SM-A515U1, deviceName: 10.101.72.13:16032, deviceScreenDensity: 420, deviceScreenSize: 1080x2400, deviceUDID: 10.101.72.13:16032, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAirports, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 93, suppressKillServer: true, systemPort: 8226, takesScreenshot: true, testobject_device: Samsung_Galaxy_A51_POC149, testobject_device_name: Samsung Galaxy A51, testobject_device_session_id: 56379e49-e5b8-4b40-9dea-819..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAirports, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 378, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2093, left: 0, top: 93, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 160dd9c4-e20a-44ee-9a4a-3f9b724a308b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageAirports(SampleSauceTest.java:142)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1491723793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1491723793'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 76)
+  (Session info: chrome=88.0.4324.93)
+  (Driver info: chromedriver=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15026, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26260, 26270]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15026, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26260, 26270]], deviceName: Samsung_Galaxy_A51_POC149, name: AuraPageAirports, platformName: Android, suppressKillServer: true, systemPort: 8226, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageAirports, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: c7c8234a-01b9-449d-9b83-177..., deviceManufacturer: samsung, deviceModel: SM-A515U1, deviceName: 10.101.72.13:16032, deviceScreenDensity: 420, deviceScreenSize: 1080x2400, deviceUDID: 10.101.72.13:16032, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAirports, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 93, suppressKillServer: true, systemPort: 8226, takesScreenshot: true, testobject_device: Samsung_Galaxy_A51_POC149, testobject_device_name: Samsung Galaxy A51, testobject_device_session_id: 56379e49-e5b8-4b40-9dea-819..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAirports, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 378, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2093, left: 0, top: 93, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 160dd9c4-e20a-44ee-9a4a-3f9b724a308b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageAirports(SampleSauceTest.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>44</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , iOS, iPhone.*, public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., automationName: XCUITest, browserName: safari, commandTimeouts: {default: 60000}, databaseEnabled: false, deviceContextId: e7bf533e-0cb4-43dc-bd20-c17..., deviceName: 27a44ad41b5b8c5342ed4adfe53..., javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAirports, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: MAC, platformVersion: 12.4.9, realDevice: true, takesScreenshot: true, testobject_device: iPhone_6_Plus_12_real_us, testobject_device_name: iPhone 6 Plus, testobject_device_session_id: c0b9f240-1038-4c42-b614-a11..., testobject_platform_name: iOS, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAirports, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 384, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, udid: 27a44ad41b5b8c5342ed4adfe53..., username: SauceFrank, webDriverAgentUrl: http://127.0.0.1:5711, webStorageEnabled: false}
+Session ID: 852da8c0-7aa4-4c3b-9d46-e0bd3939923a
+*** Element info: {Using=link text, value=THE AIRPORT}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -216,32 +231,26 @@ Command duration or timeout: 0 milliseconds
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:189)
+	at com.aura.SampleSauceTest.AuraPageAirports(SampleSauceTest.java:142)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako8394.prod.miso&apos;, ip: &apos;fe80:0:0:0:189b:48d1:2321:169f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace121146317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace121146317'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843764152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace843764152'><pre>org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako8394.prod.miso&apos;, ip: &apos;fe80:0:0:0:189b:48d1:2321:169f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
-Command duration or timeout: 0 milliseconds
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., automationName: XCUITest, browserName: safari, commandTimeouts: {default: 60000}, databaseEnabled: false, deviceContextId: e7bf533e-0cb4-43dc-bd20-c17..., deviceName: 27a44ad41b5b8c5342ed4adfe53..., javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAirports, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: MAC, platformVersion: 12.4.9, realDevice: true, takesScreenshot: true, testobject_device: iPhone_6_Plus_12_real_us, testobject_device_name: iPhone 6 Plus, testobject_device_session_id: c0b9f240-1038-4c42-b614-a11..., testobject_platform_name: iOS, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAirports, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 384, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, udid: 27a44ad41b5b8c5342ed4adfe53..., username: SauceFrank, webDriverAgentUrl: http://127.0.0.1:5711, webStorageEnabled: false}
+Session ID: 852da8c0-7aa4-4c3b-9d46-e0bd3939923a
+*** Element info: {Using=link text, value=THE AIRPORT}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -254,10 +263,10 @@ Command duration or timeout: 0 milliseconds
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:189)
+	at com.aura.SampleSauceTest.AuraPageAirports(SampleSauceTest.java:142)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -273,26 +282,20 @@ Command duration or timeout: 0 milliseconds
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako8394.prod.miso&apos;, ip: &apos;fe80:0:0:0:189b:48d1:2321:169f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
 </pre></div></td>
-<td>13</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>58</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako5707.prod.miso&apos;, ip: &apos;fe80:0:0:0:1494:18be:53de:6a25%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 115)
+  (Session info: chrome=86.0.4240.99)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Linux 4.15.0-123-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15013, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26130, 26140]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15013, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26130, 26140]], deviceName: Samsung_Galaxy_Note_10_real_us, name: AuraPageGastronomy, platformName: Android, suppressKillServer: true, systemPort: 8213, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageGastronomy, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: c00fb4e8-f734-41b7-926c-ab8..., deviceManufacturer: samsung, deviceModel: SM-N970U1, deviceName: 10.101.72.21:16023, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: 10.101.72.21:16023, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageGastronomy, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 90, suppressKillServer: true, systemPort: 8213, takesScreenshot: true, testobject_device: Samsung_Galaxy_Note_10_real_us, testobject_device_name: Samsung Galaxy Note 10, testobject_device_session_id: 7cbb8ead-5dd8-4010-83a2-a17..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageGastronomy, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 381, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 1974, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 249f266d-61c5-4cf4-bea7-ac7e0a43f388
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -300,33 +303,25 @@ Command duration or timeout: 0 milliseconds
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:181)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageGastronomy(SampleSauceTest.java:149)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako5707.prod.miso&apos;, ip: &apos;fe80:0:0:0:1494:18be:53de:6a25%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1528254971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1528254971'><pre>org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako5707.prod.miso&apos;, ip: &apos;fe80:0:0:0:1494:18be:53de:6a25%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1775993619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1775993619'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 115)
+  (Session info: chrome=86.0.4240.99)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Linux 4.15.0-123-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15013, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26130, 26140]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15013, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26130, 26140]], deviceName: Samsung_Galaxy_Note_10_real_us, name: AuraPageGastronomy, platformName: Android, suppressKillServer: true, systemPort: 8213, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageGastronomy, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: c00fb4e8-f734-41b7-926c-ab8..., deviceManufacturer: samsung, deviceModel: SM-N970U1, deviceName: 10.101.72.21:16023, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: 10.101.72.21:16023, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageGastronomy, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 90, suppressKillServer: true, systemPort: 8213, takesScreenshot: true, testobject_device: Samsung_Galaxy_Note_10_real_us, testobject_device_name: Samsung Galaxy Note 10, testobject_device_session_id: 7cbb8ead-5dd8-4010-83a2-a17..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageGastronomy, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 381, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 1974, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 249f266d-61c5-4cf4-bea7-ac7e0a43f388
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -338,11 +333,9 @@ Command duration or timeout: 0 milliseconds
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:181)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageGastronomy(SampleSauceTest.java:149)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -358,18 +351,212 @@ Command duration or timeout: 0 milliseconds
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;itako5707.prod.miso&apos;, ip: &apos;fe80:0:0:0:1494:18be:53de:6a25%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;SL-1549.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: driver.version: unknown
 </pre></div></td>
-<td>16</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>21</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=88.0.4324.152)
+  (Driver info: chromedriver=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15000, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26000, 26010]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15000, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26000, 26010]], deviceName: Samsung_Galaxy_Tab_A_10_1_r..., name: AuraPageJoin, platformName: Android, suppressKillServer: true, systemPort: 8200, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageJoin, username: SauceFrank}, deviceApiLevel: 24, deviceContextId: 19963ab7-88a3-4cda-8788-90f..., deviceManufacturer: samsung, deviceModel: SM-T580, deviceName: 10.101.48.24:16010, deviceScreenDensity: 213, deviceScreenSize: 1200x1920, deviceUDID: 10.101.48.24:16010, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageJoin, networkConnectionEnabled: true, pixelRatio: 1.3312501, platform: LINUX, platformName: LINUX, platformVersion: 7.0, statBarHeight: 32, suppressKillServer: true, systemPort: 8200, takesScreenshot: true, testobject_device: Samsung_Galaxy_Tab_A_10_1_r..., testobject_device_name: Samsung Galaxy Tab A 10.1 2016, testobject_device_session_id: d3eff43a-c63a-4cf1-b8a2-3d1..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageJoin, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 382, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 1888, left: 0, top: 32, width: 1200}, warnings: {}, webStorageEnabled: false}
+Session ID: ed761320-e15d-4a54-8910-943e10ea4020
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageJoin(SampleSauceTest.java:163)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1428007194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1428007194'><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=88.0.4324.152)
+  (Driver info: chromedriver=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15000, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26000, 26010]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15000, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26000, 26010]], deviceName: Samsung_Galaxy_Tab_A_10_1_r..., name: AuraPageJoin, platformName: Android, suppressKillServer: true, systemPort: 8200, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageJoin, username: SauceFrank}, deviceApiLevel: 24, deviceContextId: 19963ab7-88a3-4cda-8788-90f..., deviceManufacturer: samsung, deviceModel: SM-T580, deviceName: 10.101.48.24:16010, deviceScreenDensity: 213, deviceScreenSize: 1200x1920, deviceUDID: 10.101.48.24:16010, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageJoin, networkConnectionEnabled: true, pixelRatio: 1.3312501, platform: LINUX, platformName: LINUX, platformVersion: 7.0, statBarHeight: 32, suppressKillServer: true, systemPort: 8200, takesScreenshot: true, testobject_device: Samsung_Galaxy_Tab_A_10_1_r..., testobject_device_name: Samsung Galaxy Tab A 10.1 2016, testobject_device_session_id: d3eff43a-c63a-4cf1-b8a2-3d1..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageJoin, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 382, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 1888, left: 0, top: 32, width: 1200}, warnings: {}, webStorageEnabled: false}
+Session ID: ed761320-e15d-4a54-8910-943e10ea4020
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageJoin(SampleSauceTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>54</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , iOS, iPhone.*, public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., automationName: XCUITest, browserName: safari, commandTimeouts: {default: 60000}, databaseEnabled: false, deviceContextId: 9d75185a-bd16-46c8-a061-66c..., deviceName: 04b43d07216454532b60b6b9d10..., javascriptEnabled: true, locationContextEnabled: false, name: AuraPageJoin, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: MAC, platformVersion: 12.4.8, realDevice: true, takesScreenshot: true, testobject_device: iPhone_5S_real_us, testobject_device_name: iPhone 5S, testobject_device_session_id: 21e9a16d-a19c-4afe-bfac-c7f..., testobject_platform_name: iOS, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageJoin, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 386, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, udid: 04b43d07216454532b60b6b9d10..., username: SauceFrank, webDriverAgentUrl: http://127.0.0.1:5710, webStorageEnabled: false}
+Session ID: 5ef2272a-704c-4965-81c7-80e59e70e7e4
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageJoin(SampleSauceTest.java:163)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269885387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace269885387'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., automationName: XCUITest, browserName: safari, commandTimeouts: {default: 60000}, databaseEnabled: false, deviceContextId: 9d75185a-bd16-46c8-a061-66c..., deviceName: 04b43d07216454532b60b6b9d10..., javascriptEnabled: true, locationContextEnabled: false, name: AuraPageJoin, networkConnectionEnabled: false, orientation: PORTRAIT, platform: MAC, platformName: MAC, platformVersion: 12.4.8, realDevice: true, takesScreenshot: true, testobject_device: iPhone_5S_real_us, testobject_device_name: iPhone 5S, testobject_device_session_id: 21e9a16d-a19c-4afe-bfac-c7f..., testobject_platform_name: iOS, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageJoin, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 386, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, udid: 04b43d07216454532b60b6b9d10..., username: SauceFrank, webDriverAgentUrl: http://127.0.0.1:5710, webStorageEnabled: false}
+Session ID: 5ef2272a-704c-4965-81c7-80e59e70e7e4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageJoin(SampleSauceTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>49</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 194)
+  (Session info: chrome=85.0.4183.127)
+  (Driver info: chromedriver=85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}),platform=Linux 4.15.0-122-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15002, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26020, 26030]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15002, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26020, 26030]], deviceName: Samsung_Galaxy_S20_Ultra_re..., name: AuraPageRoutes, platformName: Android, suppressKillServer: true, systemPort: 8202, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageRoutes, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: d035e227-e90a-442a-824a-8ec..., deviceManufacturer: samsung, deviceModel: SM-G988U1, deviceName: 10.101.72.23:16006, deviceScreenDensity: 420, deviceScreenSize: 1080x2400, deviceUDID: 10.101.72.23:16006, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageRoutes, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 74, suppressKillServer: true, systemPort: 8202, takesScreenshot: true, testobject_device: Samsung_Galaxy_S20_Ultra_re..., testobject_device_name: Samsung Galaxy S20 Ultra, testobject_device_session_id: c69d71b4-5f52-48f3-ae24-792..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageRoutes, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 379, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2126, left: 0, top: 74, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 81fe1f9f-3f4f-4ecf-9f6a-6c5593e5687a
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageRoutes(SampleSauceTest.java:156)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace449944465", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace449944465'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-130, 194)
+  (Session info: chrome=85.0.4183.127)
+  (Driver info: chromedriver=85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}),platform=Linux 4.15.0-122-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1549.local&apos;, ip: &apos;fe80:0:0:0:488:113f:f836:b093%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15002, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26020, 26030]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15002, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26020, 26030]], deviceName: Samsung_Galaxy_S20_Ultra_re..., name: AuraPageRoutes, platformName: Android, suppressKillServer: true, systemPort: 8202, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageRoutes, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: d035e227-e90a-442a-824a-8ec..., deviceManufacturer: samsung, deviceModel: SM-G988U1, deviceName: 10.101.72.23:16006, deviceScreenDensity: 420, deviceScreenSize: 1080x2400, deviceUDID: 10.101.72.23:16006, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageRoutes, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 74, suppressKillServer: true, systemPort: 8202, takesScreenshot: true, testobject_device: Samsung_Galaxy_S20_Ultra_re..., testobject_device_name: Samsung Galaxy S20 Ultra, testobject_device_session_id: c69d71b4-5f52-48f3-ae24-792..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageRoutes, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 379, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2126, left: 0, top: 74, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 81fe1f9f-3f4f-4ecf-9f6a-6c5593e5687a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aura.SampleSauceTest.AuraPageRoutes(SampleSauceTest.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>20</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -379,235 +566,300 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>8</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>10</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>11</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>12</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>15</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>17</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>17</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>22</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>28</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.demoPageTitle()'><b>demoPageTitle</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>32</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>12</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>12</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>18</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>18</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>25</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>36</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.invalidLoginFlow()'><b>invalidLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>38</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>11</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>13</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>20</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>22</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>23</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>31</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
-<tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>33</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.lockedOutLoginFlow()'><b>lockedOutLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>34</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , iOS, iPhone.*, public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>10</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>28</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>12</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>47</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>12</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>66</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>14</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>71</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAircraft()'><b>AuraPageAircraft</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.aura.SampleSauceTest.AuraPageAircraft(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>20</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>111</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>21</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>16</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>19</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>25</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>46</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>31</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.problemLoginFlow()'><b>problemLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>34</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>52</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>67</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>72</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageAirports()'><b>AuraPageAirports</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageAirports(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>110</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>23</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>24</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>26</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>40</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>48</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , iOS, iPhone.*, public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>11</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>11</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>69</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>12</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>72</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>14</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>111</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageGastronomy()'><b>AuraPageGastronomy</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.aura.SampleSauceTest.AuraPageGastronomy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>112</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>16</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>19</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>23</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>30</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>48</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>55</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageJoin()'><b>AuraPageJoin</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.aura.SampleSauceTest.AuraPageJoin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>71</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>16</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>26</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , iOS, iPhone.*, public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>19</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>37</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>39</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>49</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>44</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 <tr>
-<td title='com.yourcompany.SampleSauceTest.validLoginFlow()'><b>validLoginFlow</b><br>Test class: com.yourcompany.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>50</td>
-<td>com.yourcompany.SampleSauceTest@34ce8af7</td></tr>
+<td>68</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>73</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>111</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageRoutes()'><b>AuraPageRoutes</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageRoutes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>133</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, latest, macOS 10.13, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>15</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest, macOS 10.14, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>21</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, MicrosoftEdge, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, 55.0, Windows 7, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, firefox, latest-2, Windows 10, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , Android, Samsung.*, public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>33</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: device, , , iOS, iPhone.*, public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>29</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, 76.0, OS X 10.11, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>47</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, chrome, latest, Windows 10, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>64</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, safari, 11.0, macOS 10.12, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>72</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
+<tr>
+<td title='com.aura.SampleSauceTest.AuraPageTitle()'><b>AuraPageTitle</b><br>Test class: com.aura.SampleSauceTest<br>Parameters: browser, internet explorer, 11, Windows 8.1, , public void com.aura.SampleSauceTest.AuraPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>110</td>
+<td>com.aura.SampleSauceTest@34ce8af7</td></tr>
 </table><p>
 </body>
 </html>

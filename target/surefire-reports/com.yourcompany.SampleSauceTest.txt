@@ -1,70 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: com.yourcompany.SampleSauceTest
 -------------------------------------------------------------------------------
-Tests run: 50, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 51.949 sec <<< FAILURE! - in com.yourcompany.SampleSauceTest
-problemLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 13.665 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'itako8394.prod.miso', ip: 'fe80:0:0:0:189b:48d1:2321:169f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
-Driver info: driver.version: unknown
+Tests run: 60, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 99.485 sec <<< FAILURE! - in com.yourcompany.SampleSauceTest
+AuraPageAircraft(com.yourcompany.SampleSauceTest)  Time elapsed: 22.464 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (-130, 37)
+  (Session info: chrome=87.0.4280.141)
+  (Driver info: chromedriver=87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:189)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'itako8394.prod.miso', ip: 'fe80:0:0:0:189b:48d1:2321:169f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
-Driver info: driver.version: unknown
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15022, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26220, 26230]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15022, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26220, 26230]], deviceName: Samsung_Galaxy_S10_real, name: AuraPageAircraft, platformName: Android, suppressKillServer: true, systemPort: 8222, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageAircraft, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: a1bfa413-99fc-4489-b04c-c3b..., deviceManufacturer: samsung, deviceModel: SM-G973U1, deviceName: 10.101.72.16:16023, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: 10.101.72.16:16023, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAircraft, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 150, suppressKillServer: true, systemPort: 8222, takesScreenshot: true, testobject_device: Samsung_Galaxy_S10_real, testobject_device_name: Samsung Galaxy S10, testobject_device_session_id: c1f8d7bb-5440-4e39-8e18-156..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAircraft, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 151, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2573, left: 0, top: 150, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 4413fd31-afb9-4f14-b41f-61c0b753890f
+	at com.yourcompany.SampleSauceTest.AuraPageAircraft(SampleSauceTest.java:133)
 
-validLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 16.183 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'itako5707.prod.miso', ip: 'fe80:0:0:0:1494:18be:53de:6a25%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
-Driver info: driver.version: unknown
+AuraPageGastronomy(com.yourcompany.SampleSauceTest)  Time elapsed: 26.63 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (-130, 115)
+  (Session info: chrome=84.0.4147.89)
+  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:181)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'itako5707.prod.miso', ip: 'fe80:0:0:0:1494:18be:53de:6a25%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '9.0.4'
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
-Driver info: driver.version: unknown
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15011, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26110, 26120]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15011, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26110, 26120]], deviceName: Samsung_Galaxy_Note_9_real, name: AuraPageGastronomy, platformName: Android, suppressKillServer: true, systemPort: 8211, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageGastronomy, username: SauceFrank}, deviceApiLevel: 29, deviceContextId: 07d0c495-db9f-4f43-b22b-aeb..., deviceManufacturer: samsung, deviceModel: SM-N960U1, deviceName: 10.101.72.19:16026, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 10.101.72.19:16026, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageGastronomy, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, suppressKillServer: true, systemPort: 8211, takesScreenshot: true, testobject_device: Samsung_Galaxy_Note_9_real, testobject_device_name: Samsung Galaxy Note 9, testobject_device_session_id: 0ded1863-da53-470b-b3b0-850..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageGastronomy, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 147, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2823, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 78712402-0790-43a3-9f6b-2b983f16e61d
+	at com.yourcompany.SampleSauceTest.AuraPageGastronomy(SampleSauceTest.java:147)
 
-lockedOutLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 29.353 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container > div > form > h3 (tried for 15 second(s) with 500 milliseconds interval)
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:197)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.cssSelector: #login_button_container > div > form > h3
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+AuraPageJoin(com.yourcompany.SampleSauceTest)  Time elapsed: 56.787 sec  <<< FAILURE!
+org.openqa.selenium.ElementNotVisibleException: 
+element not interactable
+  (Session info: chrome=87.0.4280.101)
+  (Driver info: chromedriver=87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
-Driver info: driver.version: unknown
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:197)
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15020, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26200, 26210]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15020, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26200, 26210]], deviceName: Samsung_Galaxy_S7_Edge_real, name: AuraPageJoin, platformName: Android, suppressKillServer: true, systemPort: 8220, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageJoin, username: SauceFrank}, deviceApiLevel: 26, deviceContextId: 4fe0aa02-d92b-4a43-862a-819..., deviceManufacturer: samsung, deviceModel: SM-G935U, deviceName: 10.101.64.14:16011, deviceScreenDensity: 640, deviceScreenSize: 1440x2560, deviceUDID: 10.101.64.14:16011, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageJoin, networkConnectionEnabled: true, pixelRatio: 4, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, statBarHeight: 96, suppressKillServer: true, systemPort: 8220, takesScreenshot: true, testobject_device: Samsung_Galaxy_S7_Edge_real, testobject_device_name: Samsung Galaxy S7 Edge, testobject_device_session_id: 64d747ef-76b8-467c-98e5-146..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageJoin, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 148, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2464, left: 0, top: 96, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: f7473fa7-0e7a-4a45-965b-c69f587ab85c
+	at com.yourcompany.SampleSauceTest.AuraPageJoin(SampleSauceTest.java:161)
 
-invalidLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 30.738 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #login_button_container > div > form > h3 (tried for 15 second(s) with 500 milliseconds interval)
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:165)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.cssSelector: #login_button_container > div > form > h3
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+AuraPageRoutes(com.yourcompany.SampleSauceTest)  Time elapsed: 61.2 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (-130, 194)
+  (Session info: chrome=77.0.3865.116)
+  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
-Driver info: driver.version: unknown
-	at com.yourcompany.SampleSauceTest.isErrorPresent(SampleSauceTest.java:234)
-	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:165)
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15027, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26270, 26280]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15027, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26270, 26280]], deviceName: Samsung_note_5_real_us, name: AuraPageRoutes, platformName: Android, suppressKillServer: true, systemPort: 8227, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageRoutes, username: SauceFrank}, deviceApiLevel: 24, deviceContextId: 6b085941-c18a-411b-81db-39e..., deviceManufacturer: samsung, deviceModel: SM-N920G, deviceName: 10.101.72.13:16006, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: 10.101.72.13:16006, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageRoutes, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 7.0, statBarHeight: 84, suppressKillServer: true, systemPort: 8227, takesScreenshot: true, testobject_device: Samsung_note_5_real_us, testobject_device_name: Samsung Galaxy Note 5, testobject_device_session_id: 2397e630-08d7-4f97-b7df-094..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageRoutes, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 149, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 89fb4359-03c4-4542-a7cf-ef60a2f81991
+	at com.yourcompany.SampleSauceTest.AuraPageRoutes(SampleSauceTest.java:154)
+
+AuraPageAirports(com.yourcompany.SampleSauceTest)  Time elapsed: 95.537 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (-130, 76)
+  (Session info: chrome=87.0.4280.141)
+  (Driver info: chromedriver=87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}),platform=Linux 4.15.0-118-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1549.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15003, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26030, 26040]], databaseEnabled: false, desired: {accesskey: 70d8fea3-9242-4aea-ba5a-4f5..., adbPort: 15003, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverChromeMappingFile: /root/.testobject_devices/w..., chromedriverExecutableDir: /root/.testobject_devices/w..., chromedriverPorts: [[26030, 26040]], deviceName: Samsung_Tab_E_9_6_real_us, name: AuraPageAirports, platformName: Android, suppressKillServer: true, systemPort: 8203, testobject_device: Samsung.*, testobject_platform_name: Android, testobject_test_name: AuraPageAirports, username: SauceFrank}, deviceApiLevel: 25, deviceContextId: 83cae284-3b77-47b2-9835-7cc..., deviceManufacturer: samsung, deviceModel: SM-T560NU, deviceName: 10.101.56.22:16001, deviceScreenDensity: 160, deviceScreenSize: 800x1280, deviceUDID: 10.101.56.22:16001, javascriptEnabled: true, locationContextEnabled: false, name: AuraPageAirports, networkConnectionEnabled: true, pixelRatio: 1, platform: LINUX, platformName: LINUX, platformVersion: 7.1.1, statBarHeight: 24, suppressKillServer: true, systemPort: 8203, takesScreenshot: true, testobject_device: Samsung_Tab_E_9_6_real_us, testobject_device_name: Samsung Tab E 9.6, testobject_device_session_id: 41ba08cc-abdf-4b9b-87b4-530..., testobject_platform_name: Android, testobject_project_id: saucelabs-default, testobject_test_name: AuraPageAirports, testobject_test_report_api_url: https://api.us-west-1.sauce..., testobject_test_report_id: 146, testobject_test_report_url: https://app.saucelabs.com/t..., testobject_user_id: SauceFrank, username: SauceFrank, viewportRect: {height: 1256, left: 0, top: 24, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: d16370d9-88ce-4f8e-907c-e24f878a15b5
+	at com.yourcompany.SampleSauceTest.AuraPageAirports(SampleSauceTest.java:140)
 
