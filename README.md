@@ -1,10 +1,13 @@
-# Aura Java Demo
+# Pantheon.io Demo
 
-54 Concurrent Sessions
-12 Real Device Sessions
+18 Concurrent Sessions   
+4 Real Device Sessions
 
-Runs test on Aura Jets Site.
+Runs test on Pantheon.io Site.
 
 Cross Browser, Android, and iOS Real Devices
+
+mvn dependency:resolve    
+mvn test-compile
 
 Run all tests with: mvn test

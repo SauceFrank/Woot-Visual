@@ -3,16 +3,12 @@
 <suite thread-count="100" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
   <test name="Surefire test(failed)" parallel="methods">
     <classes>
-      <class name="com.aura.SampleSauceTest">
+      <class name="com.pantheon.PantheonTest">
         <methods>
-          <include name="AuraPageAirports" invocation-numbers="9 10"/>
-          <include name="AuraPageGastronomy" invocation-numbers="9"/>
-          <include name="AuraPageAircraft" invocation-numbers="9"/>
           <include name="tearDown"/>
-          <include name="AuraPageJoin" invocation-numbers="9 10"/>
-          <include name="AuraPageRoutes" invocation-numbers="9"/>
+          <include name="PantheonWhy" invocation-numbers="1 6 5 2 8 9"/>
         </methods>
-      </class> <!-- com.aura.SampleSauceTest -->
+      </class> <!-- com.pantheon.PantheonTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

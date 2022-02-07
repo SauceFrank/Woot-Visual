@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Aura-Java-Demo.iml" filepath="$PROJECT_DIR$/Aura-Java-Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pantheon-Demo.iml" filepath="$PROJECT_DIR$/Pantheon-Demo.iml" />
     </modules>
   </component>
 </project>
