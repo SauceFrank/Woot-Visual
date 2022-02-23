@@ -10,9 +10,11 @@ SAUCE_USERNAME
 SAUCE_ACCESS_KEY   
 BUILD_TAG   
 
-Sauce Connect Tunnel environament variable only if needed   
-SAUCE_TUNNEL
+If Sauce Connect Tunnel is needed, set following environment variable   
+SAUCE_TUNNEL    
 
+If Sauce Connect Tunnel is not needed, comment out the following line in Capabilities   
+sauceOptions.setCapability("tunnelIdentifier", sauceTunnel);
 Windows 10 Chrome 98.0, and Windows 10 Firefox 2 versions back
 
 Runs Visual test against Woot.com. Run to set baseline by accepting all changes.   
