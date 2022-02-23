@@ -9,6 +9,8 @@ Environment Variables Required:
 SAUCE_USERNAME   
 SAUCE_ACCESS_KEY   
 BUILD_TAG   
+
+Sauce Connect Tunnel environament variable only if needed   
 SAUCE_TUNNEL
 
 Windows 10 Chrome 98.0, and Windows 10 Firefox 2 versions back
