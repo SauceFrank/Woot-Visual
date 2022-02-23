@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.pantheon.PantheonTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 89.232 sec <<< FAILURE! - in com.pantheon.PantheonTest
+PantheonPageTitle(com.pantheon.PantheonTest)  Time elapsed: 63.076 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 visual regressions found. Test failed.
+
+View report: https://screener.io/v2/dashboard/6202abdf725153e1e40a4781/(default) expected [true] but found [false]
+	at com.pantheon.PantheonTest.PantheonPageTitle(PantheonTest.java:144)
+
+PantheonPageTitle(com.pantheon.PantheonTest)  Time elapsed: 88.302 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 visual regressions found. Test failed.
+
+View report: https://screener.io/v2/dashboard/6202abdf725153e1e40a4781/(default) expected [true] but found [false]
+	at com.pantheon.PantheonTest.PantheonPageTitle(PantheonTest.java:144)
+

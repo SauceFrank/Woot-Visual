@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.woot.WootTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 214.587 sec <<< FAILURE! - in com.woot.WootTest
+WootElectronics(com.woot.WootTest)  Time elapsed: 147.038 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 visual regressions found. Test failed.
+
+View report: https://screener.io/v2/dashboard/621655f7f799877d1a454f71/(default) expected [true] but found [false]
+	at com.woot.WootTest.WootElectronics(WootTest.java:162)
+
+WootElectronics(com.woot.WootTest)  Time elapsed: 170.706 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 visual regressions found. Test failed.
+
+View report: https://screener.io/v2/dashboard/621655f7f799877d1a454f71/(default) expected [true] but found [false]
+	at com.woot.WootTest.WootElectronics(WootTest.java:162)
+
