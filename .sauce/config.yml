@@ -1,0 +1,12 @@
+apiVersion: v1alpha
+kind: imagerunner
+region: ${SAUCE_REGION}
+suites:
+  - name: photon-java-makudu
+    image: leyfr01/photon-demo-docker:0.0.7
+    entrypoint: mvn --offline test
+    env:
+      SAUCE_USERNAME: ${SAUCE_USERNAME}
+      SAUCE_ACCESS_KEY: ${SAUCE_ACCESS_KEY}
+      SAUCE_REGION: ${SAUCE_REGION}
+      SAUCE_BUILD_TYPE: "Photon"

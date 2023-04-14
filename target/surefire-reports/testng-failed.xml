@@ -3,12 +3,12 @@
 <suite thread-count="100" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
   <test name="Surefire test(failed)" parallel="methods">
     <classes>
-      <class name="com.pantheon.PantheonTest">
+      <class name="com.bofa.BofATest">
         <methods>
           <include name="tearDown"/>
-          <include name="PantheonWhy" invocation-numbers="1 6 5 2 8 9"/>
+          <include name="MadKuduPageTitle" invocation-numbers="3 1 4 7 6 2 5 8 9 11 10 0"/>
         </methods>
-      </class> <!-- com.pantheon.PantheonTest -->
+      </class> <!-- com.bofa.BofATest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
