@@ -1,12 +1,19 @@
 apiVersion: v1alpha
 kind: imagerunner
-region: ${SAUCE_REGION}
+sauce:
+  region: us-west-1
 suites:
-  - name: photon-java-makudu
-    image: leyfr01/photon-demo-docker:0.0.7
-    entrypoint: mvn --offline test
-    env:
-      SAUCE_USERNAME: ${SAUCE_USERNAME}
-      SAUCE_ACCESS_KEY: ${SAUCE_ACCESS_KEY}
-      SAUCE_REGION: ${SAUCE_REGION}
-      SAUCE_BUILD_TYPE: "Photon"
+  - name: Amtrak Tests
+    workload: webdriver
+    image: leyfr01/so-demo-java:0.0.3
+    # the command to run your tests
+    entrypoint: mvn clean test
+    artifacts:
+      - "/workdir/CZI-Demo/target/surefire-reports/*"
+
+artifacts:
+  download:
+    when: always
+    match:
+      - "*"
+    directory: ./artifacts

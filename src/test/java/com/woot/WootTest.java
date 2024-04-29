@@ -1,4 +1,4 @@
-package com.bofa;
+package com.woot;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -13,7 +13,7 @@ import java.net.URL;
 
 import static org.testng.Assert.assertEquals;
 
-public class BofATest {
+public class WootTest {
 //Environment variable for user and Sauce_accesskey
     public String sauce_username = System.getenv("SAUCE_USERNAME");
     public String sauce_accesskey = System.getenv("SAUCE_ACCESS_KEY");
@@ -32,25 +32,25 @@ public class BofATest {
         return new Object[][]{
 
 //                // Windows
-                new Object[]{"browser","chrome", "latest", "Windows 10",""},
+//                new Object[]{"browser","chrome", "latest", "Windows 11",""},
+//                new Object[]{"browser","chrome", "latest-1", "Windows 10",""},
                 new Object[]{"browser","MicrosoftEdge", "latest", "Windows 10",""},
-                new Object[]{"browser","firefox", "latest-2", "Windows 10",""},
-                new Object[]{"browser","internet explorer", "11", "Windows 8.1",""},
-                new Object[]{"browser","firefox", "55.0", "Windows 7",""},
-
+//                new Object[]{"browser","firefox", "latest-2", "Windows 10",""},
+/*
                 // Mac
-                new Object[]{"browser","firefox", "latest", "macOS 10.14",""},
                 new Object[]{"browser","safari", "latest", "macOS 10.13",""},
-                new Object[]{"browser","safari", "11.0", "macOS 10.12",""},
-//                new Object[]{"browser","chrome", "76", "OS X 10.11",""},
+                new Object[]{"browser","chrome", "latest", "macOS 10.14",""},
+                new Object[]{"browser","firefox", "latest", "macOS 10.14",""},
+                new Object[]{"browser","chrome", "latest", "OS X 10.14",""},
 
                 //Devices
+                new Object[]{"device","", "", "Android","Samsung Galaxy S22"},
+                new Object[]{"device","", "", "iOS", "iPhone 14 Pro Max.*"},
+                new Object[]{"device","", "", "iOS", "iPad 10.2"},
                 new Object[]{"device","", "", "Android","Samsung.*"},
                 new Object[]{"device","", "", "iOS", "iPhone.*"},
-                new Object[]{"device","", "", "Android","Samsung.*"},
-                new Object[]{"device","", "", "iOS", "iPhone.*"},
-//                new Object[]{"device","", "", "iOS", "iPhone_14_POC237"},
-//                new Object[]{"device","", "", "Android","Samsung_Galaxy_S20_FE_5G_POC129"},
+                new Object[]{"device","", "", "Android","Google.*"},
+                new Object[]{"device","", "", "iOS", "iPad.*"}, */
         };
     }
 
@@ -123,26 +123,13 @@ public class BofATest {
      * @throws Exception if an error occurs during the running of the test
      */
 
-    @Test(dataProvider = "hardCodedBrowsers")
-    public void MadKuduPageTitle(String type, String browser, String version, String os, String device, Method method) throws Exception {
 
-        WebDriver driver = createDriver(type, browser, version, os, device, method.getName());
-        driver.get("https://www.madkudu.com/");
-        assertEquals(driver.getTitle(), "MadKudu | Predictive Lead & Account Scoring");
-    }
-    @Test(dataProvider = "hardCodedBrowsers")
-    public void MadKuduFunc(String type, String browser, String version, String os, String device, Method method) throws Exception {
-
-        WebDriver driver = createDriver(type, browser, version, os, device, method.getName());
-        driver.get("https://www.madkudu.com/solutions/madkudu-for-inbound");
-        assertEquals(driver.getTitle(), "MadKudu for Inbound");
-        driver.get("https://www.madkudu.com/pricing");
-        assertEquals(driver.getTitle(), "PLG Powered by Data & Science | MadKudu Pricing");
-        driver.get("https://www.madkudu.com/customers");
-        assertEquals(driver.getTitle(), "Success Stories | MadKudu: Product-Led Everything");
-        driver.get("https://www.madkudu.com/plg-maturity-model");
-        assertEquals(driver.getTitle(), "MadKudu Product-Led Maturity Model");
-    }
+        @Test(dataProvider = "hardCodedBrowsers")
+        public void WootPageTitle (String type, String browser, String version, String os, String device, Method method) throws Exception {
+            WebDriver driver = createDriver(type, browser, version, os, device, method.getName());
+            driver.get("https://www.woot.com/");
+            assertEquals(driver.getTitle(), "Woot");
+        }
 
     /**
      * @return the {@link WebDriver} for the current thread

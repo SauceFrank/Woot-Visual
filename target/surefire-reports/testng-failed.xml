@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="100" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
-  <test name="Surefire test(failed)" parallel="methods">
+<suite thread-count="100" parallel="methods" name="Failed suite [Surefire suite]" verbose="0">
+  <test parallel="methods" name="Surefire test(failed)">
     <classes>
-      <class name="com.bofa.BofATest">
+      <class name="com.amtrak.AmtrakTest">
         <methods>
           <include name="tearDown"/>
-          <include name="MadKuduPageTitle" invocation-numbers="3 1 4 7 6 2 5 8 9 11 10 0"/>
+          <include name="WootPageTitle" invocation-numbers="3"/>
         </methods>
-      </class> <!-- com.bofa.BofATest -->
+      </class> <!-- com.amtrak.AmtrakTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
