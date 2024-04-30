@@ -1,6 +1,6 @@
 # Woot Visual Demo
 
-1 Cross-Browser Session
+1 Cross-Browser Session (Windows 10 - MicroSoft Edge)
 
 Runs tests on Woot.com Site.
 
