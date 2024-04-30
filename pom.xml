@@ -36,9 +36,14 @@
             <version>2.1.24</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.saucelabs.visual</groupId>
+            <artifactId>java-client</artifactId>
+            <version>0.4.0</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
