@@ -1,9 +1,8 @@
-# Amtrak Demo
+# Woot Visual Demo
 
-18 Concurrent Session tests   
-8 Device session tests
+1 Cross-Browser Session
 
-Runs tests on Amtrak Site.
+Runs tests on Woot.com Site.
 
 Cross Browser
 
