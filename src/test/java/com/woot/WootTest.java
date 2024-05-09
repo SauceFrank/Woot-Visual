@@ -11,12 +11,9 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import com.saucelabs.visual.VisualApi;
-import static org.testng.Assert.assertEquals;
 import org.testng.annotations.BeforeSuite;
-import com.saucelabs.visual.testng.TestMetaInfoListener;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 public class WootTest {
 //Environment variable for user and Sauce_accesskey
@@ -27,10 +24,13 @@ public class WootTest {
      * ThreadLocal variable which contains the  {@link WebDriver} instance which is used to perform browser interactions with.
      */
     private ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
+
     /**
      * ThreadLocal variable which contains the Sauce Job Id.
      */
     private ThreadLocal<String> sessionId = new ThreadLocal<String>();
+    private static VisualApi visual;
+    private static RemoteWebDriver driver;
 
     @DataProvider(name = "hardCodedBrowsers", parallel = true)
     public static Object[][] sauceBrowserDataProvider(Method testMethod) {
@@ -84,8 +84,8 @@ public class WootTest {
             capabilities.setCapability("browserName", browser);
             capabilities.setCapability("version", version);
             capabilities.setCapability("platform", os);
-            capabilities.setCapability("extendedDebugging", true);
-            capabilities.setCapability("capturePerformance", true);
+//            capabilities.setCapability("extendedDebugging", true);
+//            capabilities.setCapability("capturePerformance", true);
         } else {
             capabilities.setCapability("platformName", os);
             capabilities.setCapability("deviceName", device);
@@ -111,12 +111,7 @@ public class WootTest {
 
         return webDriver.get();
     }
-    @AfterSuite
-    public static void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+
     @AfterMethod
     public void tearDown(ITestResult result) throws Exception {
         boolean status = result.isSuccess();
@@ -132,15 +127,16 @@ public class WootTest {
      * @param os Represents the operating system to be used as part of the test run.
      * @throws Exception if an error occurs during the running of the test
      */
-
-    @Listeners({TestMetaInfoListener.class})
-    public class MyTestNGTestClass {
+    @BeforeSuite
+    public static void init() {
+        driver = new RemoteWebDriver(WebDriver, DesiredCapabilities);
+        visual = new VisualApi.Builder(driver, sauceUsername, sauceAccessKey, DataCenter.US_WEST_1).build();
     }
+
         @Test(dataProvider = "hardCodedBrowsers")
         public void WootPageTitle (String type, String browser, String version, String os, String device, Method method) throws Exception {
             WebDriver driver = createDriver(type, browser, version, os, device, method.getName());
-            driver.get("https://www.woot.com/");
-            visual.sauceVisualCheck("Woot Page");
+            driver.get("https://www.woot.com/alldeals?ref=w_ngh_et_1");
             assertEquals(driver.getTitle(), "Woot");
         }
 
@@ -158,14 +154,5 @@ public class WootTest {
      */
     public String getSessionId() {
         return sessionId.get();
-    }
-
-    private static VisualApi visual;
-    private static RemoteWebDriver driver;
-
-    @BeforeSuite
-    public static void init() {
-        driver = new RemoteWebDriver(webDriverUrl, capabilities);
-        visual = new VisualApi.Builder(driver, sauceUsername, sauceAccessKey, DataCenter.US_WEST_1).build();
     }
 }
