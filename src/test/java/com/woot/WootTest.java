@@ -1,5 +1,6 @@
 package com.woot;
 
+import com.saucelabs.visual.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -10,9 +11,10 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
-import com.saucelabs.visual.VisualApi;
+import com.saucelabs.visual.testng.TestMetaInfoListener;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.AfterSuite;
 import static org.testng.Assert.assertEquals;
 
 public class WootTest {
@@ -118,7 +120,12 @@ public class WootTest {
         ((JavascriptExecutor)webDriver.get()).executeScript("sauce:job-result="+ status);
         webDriver.get().quit();
     }
-
+    @AfterSuite
+    public static void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
     /**
      * Runs a simple test verifying the title of the wikipedia.org home page.
      *
@@ -127,17 +134,23 @@ public class WootTest {
      * @param os Represents the operating system to be used as part of the test run.
      * @throws Exception if an error occurs during the running of the test
      */
+    public static String sauceUsername = System.getenv("SAUCE_USERNAME");
+    public static String sauceAccessKey = System.getenv("SAUCE_ACCESS_KEY");
     @BeforeSuite
     public static void init() {
         driver = new RemoteWebDriver(WebDriver, DesiredCapabilities);
         visual = new VisualApi.Builder(driver, sauceUsername, sauceAccessKey, DataCenter.US_WEST_1).build();
     }
-
+    @Listeners({TestMetaInfoListener.class})
+    public class MyTestNGTestClass {
+//    ...
+    }
         @Test(dataProvider = "hardCodedBrowsers")
         public void WootPageTitle (String type, String browser, String version, String os, String device, Method method) throws Exception {
             WebDriver driver = createDriver(type, browser, version, os, device, method.getName());
             driver.get("https://www.woot.com/alldeals?ref=w_ngh_et_1");
             assertEquals(driver.getTitle(), "Woot");
+            visual.sauceVisualCheck("Woot Page");
         }
 
     /**
