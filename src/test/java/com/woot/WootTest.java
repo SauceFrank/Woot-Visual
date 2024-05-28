@@ -18,7 +18,7 @@ import org.testng.annotations.AfterSuite;
 import static org.testng.Assert.assertEquals;
 
 public class WootTest {
-//Environment variable for user and Sauce_accesskey
+    //Environment variable for user and Sauce_accesskey
     public String sauce_username = System.getenv("SAUCE_USERNAME");
     public String sauce_accesskey = System.getenv("SAUCE_ACCESS_KEY");
 
@@ -41,7 +41,7 @@ public class WootTest {
 //                // Windows
 //                new Object[]{"browser","chrome", "latest", "Windows 11",""},
 //                new Object[]{"browser","chrome", "latest-1", "Windows 10",""},
-                new Object[]{"browser","MicrosoftEdge", "latest", "Windows 10",""},
+                new Object[]{"browser","MicrosoftEdge", "124", "Windows 10",""},
 //                new Object[]{"browser","firefox", "latest-2", "Windows 10",""},
 /*
                 // Mac
@@ -95,30 +95,37 @@ public class WootTest {
 
         //US
         //Creates Selenium Driver
-        webDriver.set(new RemoteWebDriver(
-                new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub"),
-                capabilities));
+        //capabilities.setCapability("sauce:options", capabilities);
+
+        URL url = new URL("https://ondemand.us-west-1.saucelabs.com/wd/hub");
+        driver = new RemoteWebDriver(url, capabilities);
+        visual = new VisualApi.Builder(driver, sauceUsername, sauceAccessKey, DataCenter.US_WEST_1)
+                .withBuild("Woot Test")
+                .withBranch("main")
+                .withProject("Woot Example")
+                .withCaptureDom(true)
+                .build();
         // EU
         // webDriver.set(new RemoteWebDriver(
         //         new URL("https://ondemand.eu-central-1.saucelabs.com/wd/hub"),
         //         capabilities));
 
         //Keeps track of the unique Selenium session ID used to identify jobs on Sauce Labs
-       String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
+        String id = driver.getSessionId().toString();
         sessionId.set(id);
 
         //For CI plugins
         String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s", id, jobName);
         System.out.println(message);
 
-        return webDriver.get();
+        return driver;
     }
 
     @AfterMethod
     public void tearDown(ITestResult result) throws Exception {
         boolean status = result.isSuccess();
-        ((JavascriptExecutor)webDriver.get()).executeScript("sauce:job-result="+ status);
-        webDriver.get().quit();
+        driver.executeScript("sauce:job-result="+ status);
+        driver.quit();
     }
     @AfterSuite
     public static void tearDown() {
@@ -138,20 +145,18 @@ public class WootTest {
     public static String sauceAccessKey = System.getenv("SAUCE_ACCESS_KEY");
     @BeforeSuite
     public static void init() {
-        driver = new RemoteWebDriver(WebDriver, DesiredCapabilities);
-        visual = new VisualApi.Builder(driver, sauceUsername, sauceAccessKey, DataCenter.US_WEST_1).build();
     }
     @Listeners({TestMetaInfoListener.class})
     public class MyTestNGTestClass {
 //    ...
     }
-        @Test(dataProvider = "hardCodedBrowsers")
-        public void WootPageTitle (String type, String browser, String version, String os, String device, Method method) throws Exception {
-            WebDriver driver = createDriver(type, browser, version, os, device, method.getName());
-            driver.get("https://www.woot.com/alldeals?ref=w_ngh_et_1");
-            assertEquals(driver.getTitle(), "Woot");
-            visual.sauceVisualCheck("Woot Page");
-        }
+    @Test(dataProvider = "hardCodedBrowsers")
+    public void WootPageTitle (String type, String browser, String version, String os, String device, Method method) throws Exception {
+        WebDriver driver = createDriver(type, browser, version, os, device, method.getName());
+        driver.get("https://www.woot.com/alldeals?ref=w_ngh_et_1");
+        assertEquals(driver.getTitle(), "Woot");
+        visual.sauceVisualCheck("Woot Page");
+    }
 
     /**
      * @return the {@link WebDriver} for the current thread
